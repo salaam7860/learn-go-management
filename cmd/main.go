@@ -1,17 +1,17 @@
 package main
 
 import (
+	"basic_management/learn-go-management/api"
 	"basic_management/learn-go-management/controller"
+
 	"fmt"
 )
 
+func main() {
 
-func main(){
-	server := controller.Server{}
+	api := api.ApiRoutes{}
 
-	server.NewServer()
+	api.StartApp(controller.Server{})
 
-	// PRINT SERVER FOR TESTING 
-
-	fmt.Printf("MAIN SERVER: %v\n", server)
+	fmt.Printf("MAIN SERVER: %v\n", api)
 }
