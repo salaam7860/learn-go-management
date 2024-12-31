@@ -8,6 +8,15 @@ var (
 	LogLevelWarning = "warn"
 )
 
+var (
+	ApiPackage        = "api"
+	ControllerPackage = "controller"
+	ModelPackage      = "model"
+	StorePackage      = "store"
+	UtilPackage       = "util"
+	MainPackage       = "main"
+)
+
 const (
 	Controller = "controller"
 	Store      = "store"
@@ -16,5 +25,7 @@ const (
 )
 
 var (
-	NewServer = "newServer"
+	NewServer  = "newServer"
+	NewStore   = "newStore"
+	CreateUser = "createUser"
 )
